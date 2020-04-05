@@ -24,13 +24,14 @@ int main(){
   for( i=0;i<500;i++){
     ADC_data[i] = Ain;
     wait(0.002); 
+    pc.printf("%1.3f\r\n",ADC_data[i]);
   }
   for( i=0;i<500;i++){ 
     if(ADC_data[i]> ADC_data[i+1] && ADC_data[i]> ADC_data[i-1]) {count=count+1;}
-    //pc.printf("%1.3f\r\n",ADC_data[i]);
+    
     else {count = count;}
   }
-  pc.printf("%d\r\n",count);
+ // pc.printf("%d\r\n",count);
   int A[3]={count/100,(count-100)/10,count-100};
   while(1){ 
     for(float i=0; i<2000; i++ ){
