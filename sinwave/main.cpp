@@ -32,7 +32,7 @@ int main(){
   }
   pc.printf("%d\r\n",count);
   int A[3]={count/100,(count-100)/10,count-100};
-  while(1){
+  while(1){ 
     for(float i=0; i<2000; i++ ){
         Aout = (sin(3.1415926*count*i/1000))/2+0.5;
         wait(1/2000);
