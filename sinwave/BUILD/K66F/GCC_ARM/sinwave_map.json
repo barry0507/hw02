@@ -16,7 +16,7 @@
             ".text": 812,
             ".data": 10,
             ".bss": 4320,
-            ".text-delta": 11,
+            ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -27,7 +27,7 @@
             ".text": 210,
             ".data": 9,
             ".bss": 29,
-            ".text-delta": -3,
+            ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -92,7 +92,7 @@
             "static_ram": 14192,
             "static_ram_delta": 0,
             "total_flash": 81493,
-            "total_flash_delta": 8
+            "total_flash_delta": 0
         }
     }
 ]

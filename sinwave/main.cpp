@@ -23,8 +23,8 @@ int main(){
   
   for( i=0;i<500;i++){
     ADC_data[i] = Ain;
-    wait(0.002); 
     pc.printf("%1.3f\r\n",ADC_data[i]);
+    wait(0.002); 
   }
   for( i=0;i<500;i++){ 
     if(ADC_data[i]> ADC_data[i+1] && ADC_data[i]> ADC_data[i-1]) {count=count+1;}
